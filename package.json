@@ -8,6 +8,7 @@
     "dev": "cross-env PAYLOAD_CONFIG_PATH=src/payload.config.ts nodemon",
     "worker": "cross-env PAYLOAD_CONFIG_PATH=src/payload.config.ts ts-node src/worker.ts",
     "worker-autosave": "cross-env PAYLOAD_CONFIG_PATH=src/payload.config.ts ts-node src/worker-autosave.ts",
+    "worker-race": "cross-env PAYLOAD_CONFIG_PATH=src/payload.config.ts ts-node src/worker-race.ts",
     "build:payload": "cross-env PAYLOAD_CONFIG_PATH=src/payload.config.ts payload build",
     "build:server": "tsc",
     "build": "yarn copyfiles && yarn build:payload && yarn build:server",
